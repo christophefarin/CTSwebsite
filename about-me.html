@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christophe Farin - Portfolio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link 
+      rel="stylesheet"
+      href="styles/css/all.min.css"
+    />
+    <title>Christophe Farin - Cable Tray Sizing</title>
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <script src="../scripts/header.js"></script>
+
+    <main class="bg-light">
+      <div class="container-fluid">
+        <div class="row">
+
+          <!-- Side Bar -->
+          <div class="col-sm-auto bg-light sticky-top">
+            <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top fs-3">
+              <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link link-secondary py-3 px-2" title="Home page" data-bs-toggle="tooltip" data-bs-placement="right">
+                    <i class="fa-solid fa-house navbar-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#exp" class="nav-link link-secondary py-3 px-2" title="Expériences professionnelles" data-bs-toggle="tooltip" data-bs-placement="right">
+                    <i class="fa-solid fa-briefcase navbar-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#formation" class="nav-link link-secondary py-3 px-2" title="Formation" data-bs-toggle="tooltip" data-bs-placement="right">
+                    <i class="fa-solid fa-graduation-cap navbar-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#comp" class="nav-link link-secondary py-3 px-2" title="Compétences professionnelles" data-bs-toggle="tooltip" data-bs-placement="right">
+                    <i class="fa-solid fa-list-check navbar-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#clients" class="nav-link link-secondary py-3 px-2" title="Clients" data-bs-toggle="tooltip" data-bs-placement="right">
+                    <i class="fa-solid fa-handshake-simple navbar-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#interets" class="nav-link link-secondary py-3 px-2" title="Centres d'intérêt" data-bs-toggle="tooltip" data-bs-placement="right">
+                    <i class="fa-solid fa-heart navbar-icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm p-3 min-vh-100">
+            <!-- About -->
+            <section class="py-5 bg-white">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h2>Qui suis-je ?</h2>
+                    <p>
+                      Ingénieur diplômé du CESI Normandie, je fais carrière dans le
+                      secteur de l'ingénierie industrielle. L'organisation en équipe
+                      pluridisciplinaires sur les projets me convient parfaitement. Je
+                      mets à disposition mes compétences et mon expérience dans les
+                      domaines de l'instrumentation, du contrôle-commande et des
+                      courants faibles pour les clients maître d'ouvrage/producteur ou
+                      maître d'oeuvre/ingénierie.
+                    </p>
+                    <div class="py-3">
+                      <a class="btn btn-secondary" href="about-me/documents/cv-chfarin.pdf" role="button">Télécharger mon CV</a>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <img
+                      src="about-me/img/portrait.jpg"
+                      alt="Christophe Farin"
+                      class="rounded img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Professional Experience -->
+            <section class="py-5 my-2 bg-white" id="exp">
+              <div class="container">
+                <h2>Mon Expériences Professionnelles</h2>
+
+                <!-- Engineering and Consulting -->
+                <div class="row mt-5">
+                  <div class="col-auto">
+                    <img src="about-me/img/logo-ec.png" alt="E&C" class="img-fluid" />
+                  </div>
+                  <div class="col">
+                    <div class="">
+                      <h3>Chef de projet</h3>
+                      <h4>Engineering and Consulting</h4>
+                      <p>Avril 2010 – Aujourd'hui</p>
+                      <div class="py-2">
+                        <button class="btn btn-secondary" id="bp1" onclick="masque(1)">Afficher +</button>
+                      </div>
+                    </div>
+                    <div class="" id="div1" style="display: none;">
+                      <p>
+                        <h5>TECHNIP : Projet Pharmaceutique Animal (Boehringer Ingelheim site de Jonage)</h5>
+                        <ul>
+                          <li>Supervision des travaux sur chantier, gestion des modifications et support aux études des entreprises</li>
+                          <li>VISA des études d'exécution établis par les entreprises et contrôle des interfaces</li>
+                          <li>Réalisation des études pour DCE des lots intégrateurs du contrôle-commande, de la GTC, de la gestion des sas et des décontaminations et du marché de travaux courants faibles</li>
+                          <li>Consultation des entreprises, analyse des offres, clarifications, tableaux de comparaison et préconisation</li>
+                          <li>Basic ingénierie d’un nouveau site de production complet, constitué d’un bâtiment de production (unités de type Bio-générateur), d’une zone utilités, d’un poste de garde</li>
+                          <li>Etudes et estimation des lots instrumentation-automation et courants faibles (sécurité incendie, détection gaz, contrôle d’accès, sureté, VDI, Gestion Technique Centralisée, Surveillance des Zones Classées, gestion des portes des salles blanches et désinfection des locaux)</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>TECHNIP : Projet Pharmaceutique Animal (MERIAL Porte des Alpes)</h5>
+                        <ul>
+                          <li>Basic ingénierie d’une nouvelle unité de Mise Sous Forme Pharmaceutique, constitué d’un atelier de formulation et d’une ligne de remplissage petits volumes</li>
+                          <li>Etudes et estimation des lots instrumentation-automation et courants faibles</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>TECHNIP : Projet MUSE (TOTAL Raffinerie de la Mède)</h5>
+                        <ul>
+                          <li>Phase FEED du projet de reconversion du site pour la production de biodiesel</li>
+                          <li>Etudes et gestion d’une base de données instrumentation et systèmes couvrant le revamping des unités de distillation atmosphérique, reformeur catalytique, fractionnement de platformat et de déisopentanisation, désulfurisation des gazoles, boucle HP, distillation sous vide</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>TECHNIP : Diverses petites études (ODG-APS…)</h5>
+                        <ul>
+                          <li>Ordre de grandeur pour un projet de dégoulottage du site ADISSEO Burgos</li>
+                          <li>APS concernant un projet d’augmentation de capacité par un procédé de cristallisation sous vide pour MERCK Santé Meyzieu</li>
+                          <li>APS concernant un projet de fabrication de nouveaux produits dans le cadre de site back-up pour MERCK Santé Meyzieu</li>
+                          <li>Estimation budgétaire pour la réalisation d’un nouveau stockage d’ammoniac pour YARA Ambès</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>TECHNIP : Projet de conversion d’une unité de Chlore (IQUISA Mexique)</h5>
+                        <ul>
+                          <li>Basic ingénierie d’une nouvelle unité d'électrolyse utilisant la technologie d'électrolyse à membrane, avec augmentation de capacité (130KT/an) en remplacement de l'atelier d'électrolyse à cathode de mercure existante</li>
+                          <li>Estimation du budget</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>ADISSEO Commentry : Projet SMARTUP</h5>
+                        <ul>
+                          <li>Référent métier au sein de l’équipe Maître d’Ouvrage en interface avec le Maître d’oeuvre, les Entreprises et les Fournisseurs</li>
+                          <li>Reporting, planning et coûts</li>
+                          <li>Assistance à MO pour le démarrage de la production</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>SANOFI St Aubin Les Elbeuf : Projet PICSEL</h5>
+                        <ul>
+                          <li>Réalisation des notes de calcul des boucles de sécurité intrinsèque</li>
+                          <li>Réalisation du document de calcul de boucle SIL</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>SANOFI Val de Reuil : Projet B44 Capacity Increase</h5>
+                        <ul>
+                          <li>Etude de détails et réalisation de deux box de formulation de vaccins au sein du bâtiment B44</li>
+                          <li>Pilotage, suivi et vérification de la construction</li>
+                          <li>Support à la mise en service et qualification / vérification DOE</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>TECHNIP : Projet Nutrition Animal (ADISSEO à Commentry)</h5>
+                        <ul>
+                          <li>Basic ingénierie d’un nouvel atelier de production de Smartamine</li>
+                          <li>Estimation du budget</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>ROCKWELL : Migration Conduite Atelier Formulation (MERIAL à St Priest)</h5>
+                        <ul>
+                          <li>Responsable du découpage Batch, structuration de l’application, migration vers une architecture intégrant un gestionnaire de recettes normalisé S88</li>
+                          <li>Assistance à MO pour la validation de l’application en conformité avec le besoin utilisateur et démarrage de l’atelier</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>EMERSON : Projet TOTAL Kharyaga Phase III</h5>
+                        <ul>
+                          <li>Réalisation des notes de calcul des boucles de sécurité intrinsèque (415 boucles)</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>SANOFI PASTEUR Val de Reuil</h5>
+                        <ul>
+                          <li>Projet ECLA – Suivi des fournisseurs (instrumentation et automatisme), FAT, SAT et mise en service des utilités de l’extension du bâtiment de contrôle qualité</li>
+                          <li>Projet DIVA - Analyse des risques et conception des chaînes de sécurité de la nouvelle station de décontamination</li>
+                          <li>Assistance à MO pour le démarrage du Bâtiment B44 (utilités, NEP, SEP et formulation)</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ingenica -->
+                <div class="row mt-5">
+                  <div class="col-auto">
+                    <img src="about-me/img/logo-ingenica.jpg" alt="Ingenica" class="img-fluid" />
+                  </div>
+                  <div class="col">
+                    <div class="">
+                      <h3>Ingénieur chef de projet</h3>
+                      <h4>Ingenica</h4>
+                      <p>2006 – 2010</p>
+                      <div class="py-2">
+                        <button class="btn btn-secondary" id="bp2" onclick="masque(2)">Afficher +</button>
+                      </div>
+                    </div>
+                    <div class="" id="div2" style="display: none;">
+                      <p>
+                        <h5>SANOFI Val de Reuil / TECHNIP la défense : Projet B44</h5>
+                        <ul>
+                          <li>Responsable du lot Instrumentation & Contrôle-Commande du projet SANOFI PASTEUR d’un nouveau bâtiment de formulation de vaccins durant les phases d’APD, de réalisation et de réception</li>
+                          <li>Etudes de bases du lot Instrumentation & Contrôle-Commande</li>
+                          <li>Etudes complémentaires à l’APS ayant pour but, l’orientation de l’analyse fonctionnelle et l’évaluation de l’utilité d’un progiciel Batch</li>
+                          <li>Gestion et coordination du projet</li>
+                          <li>Validation de l’architecture, des analyses fonctionnelles</li>
+                          <li>Coordination sur site</li>
+                          <li>FAT</li>
+                          <li>Assistance à MO</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>ARKEMA Mont : Projet ORGASOL Batch</h5>
+                        <ul>
+                          <li>Conduite du projet</li>
+                          <li>Elaboration des analyses fonctionnelles (basic + détails)</li>
+                          <li>Liste I/O</li>
+                          <li>Architecture du contrôle-commande</li>
+                          <li>Assistance à MO</li>
+                          <li>FAT et essais</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SPC Consultant -->
+                <div class="row mt-5">
+                  <div class="col-auto">
+                    <img src="about-me/img/logo-spc-consultants.jpg"
+                    alt="SPC consultants" class="img-fluid" />
+                  </div>
+                  <div class="col">
+                    <div class="">
+                      <h3>Responsable projet</h3>
+                      <h4>SPC Consultant</h4>
+                      <p>2003 – 2005</p>
+                      <div class="py-2">
+                        <button class="btn btn-secondary" id="bp3" onclick="masque(3)">Afficher +</button>
+                      </div>
+                    </div>
+                    <div class="" id="div3" style="display: none;">
+                      <p>
+                        <h5>SYCTOM de l’agglomération parisienne - projet ISSEANE</h5>
+                        <ul>
+                          <li>Gestion de projet et réalisation des spécifications fonctionnelles détaillées de réalisation du système de sécurité de l’usine de traitements des déchets à Issy les Moulineaux</li>
+                          <li>Elaboration des cahiers des charges</li>
+                          <li>Alignement et préconisation</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>GDF Fos-sur-Mer : Projet gaz</h5>
+                        <ul>
+                          <li>Mise en conformité du système de sécurité</li>
+                          <li>Architecture du système de sécurité après audit</li>
+                          <li>Spécification technique</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>LFB Les Ulis : Projet pharmaceutique</h5>
+                        <ul>
+                          <li>Mission d'assistance dans la phase d'avant-projet relative à la partie instrumentation et automatismes de l'atelier NEP</li>
+                          <li>Elaboration du budget</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>SOGEQUIP Lyon : Projet pharmaceutique</h5>
+                        <ul>
+                          <li>Coordination technique pour le SNCC d'une unité de chimie fine (atelier Batch)</li>
+                          <li>Validation des spécifications de conception</li>
+                          <li>Validation maquette</li>
+                          <li>Elaboration des cahiers des charges</li>
+                          <li>Alignement et préconisation</li>
+                          <li>Suivi fournisseur</li>
+                          <li>Mise à jour des analyses fonctionnelles</li>
+                          <li>FAT sous procédure qualité</li>
+                          <li>Formation des opérateurs</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>SANOFI Notre Dame de Bondeville : Projet pharmaceutique</h5>
+                        <ul>
+                          <li>Réalisation d’une maquette applicative mettant en oeuvre les principales fonctions de l’unité préparatoire blocs seringues (atelier Batch flexible)</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>SOLVAY Jemeppe : Projet chimie</h5>
+                        <ul>
+                          <li>Préparation et animation d’une formation sur le thème « Mise en oeuvre d’un projet Batch »</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>ATOFINA : Projet pétrole</h5>
+                        <ul>
+                          <li>Préparation et animation d’une formation sur le thème « Maintenance d'une application Batch »</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>ELIOKEM Le Havre : Projet chimie</h5>
+                        <ul>
+                          <li>Etude de sécurités instrumentées de la zone de stockage des matières premières</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>TOTAL Lussagnet : Projet gaz</h5>
+                        <ul>
+                          <li>Etude de sécurités instrumentées couvrant l’ensemble du site (stockages souterrains de gaz)</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>ATOFINA CTA Lyon : Projet pétrole</h5>
+                        <ul>
+                          <li>Fourniture d’une bibliothèque de fonctions permettant de calculer les caractéristiques de sécurité et de disponibilité des différentes architectures</li>
+                          <li>Elaboration des architectures</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>ROCHE Saint Louis : Projet agro</h5>
+                        <ul>
+                          <li>Audit de conception et de mise en oeuvre des sécurités instrumentées d’une nouvelle unité Batch multi-produits</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>ATOFINA Carling : Projet pétrole</h5>
+                        <ul>
+                          <li>Chiffrage du projet de modernisation des sécurités instrumentées de l’unité vapocraqueur ligne 2</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SOGEQUIP -->
+                <div class="row mt-5">
+                  <div class="col-auto">
+                    <img src="about-me/img/logo-sogequip.jpg" alt="Sogequip" class="img-fluid" />
+                  </div>
+                  <div class="col">
+                    <div class="">
+                      <h3>Chargé d'affaires</h3>
+                      <h4>SOGEQUIP</h4>
+                      <p>2002 – 2003</p>
+                      <div class="py-2">
+                        <button class="btn btn-secondary" id="bp4" onclick="masque(4)">Afficher +</button>
+                      </div>
+                    </div>
+                    <div class="" id="div4" style="display: none;">
+                      <p>
+                        <h5>ORSYMONDE Mitry-Mory : Production d’un atelier de psychostimulant - Batch</h5>
+                        <ul>
+                          <li>Responsable d’un projet de mise en oeuvre d’un SNCC sur une nouvelle unité de production d’un psychostimulant (atelier Batch)</li>
+                          <li>Architecture de contrôle-commande</li>
+                          <li>Analyse fonctionnelle préliminaire</li>
+                          <li>Analyse fonctionnelle détaillée</li>
+                          <li>Spécification du système</li>
+                          <li>Elaboration du dossier d’appel d’offre</li>
+                          <li>Consultation de fournisseurs</li>
+                          <li>Alignement technico économique, préconisation</li>
+                          <li>Suivi de la commande</li>
+                          <li>Assistance à MO</li>
+                          <li>Gestion des coûts</li>
+                          <li>Planification et organisation</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Techma et Europe Industrie Engineering -->
+                <div class="row mt-5">
+                  <div class="col-auto">
+                    <img src="about-me/img/logo-techma.png" alt="Techma" class="img-fluid" />
+                  </div>
+                  <div class="col">
+                    <div class="">
+                      <h3>Ingénieur études</h3>
+                      <h4>Techma et Europe Industrie Engineering</h4>
+                      <p>1998 – 2002</p>
+                      <div class="py-2">
+                        <button class="btn btn-secondary" id="bp5" onclick="masque(5)">Afficher +</button>
+                      </div>
+                    </div>
+                    <div class="" id="div5" style="display: none;">
+                      <p>
+                        <h5>RHODITECH Lyon - Nouvelle unité Batch de production d’insecticides en Chine pour AVENTIS</h5>
+                        <ul>
+                          <li>Etudes de base (électricité et instrumentation)</li>
+                          <li>Spécification et définition de l’architecture du DCS et SIS</li>
+                          <li>Participation aux revues HAZOP et création des matrices de sécurité</li>
+                          <li>En charge de l’analyse fonctionnelle</li>
+                          <li>Suivi de l’analyse organique et de la programmation</li>
+                          <li>Réalisation de la FAT</li>
+                          <li>Assistance à MO</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>SPIE ENERTRANS – Unités de production électriques à Cuba</h5>
+                        <ul>
+                          <li>Management de l’équipe instrumentation chargée des études, du suivi des commandes, des inspections et des expéditions du matériel pour la modernisation de deux unités de production électrique de 100 Mégawatts de technologie soviétique à Cuba</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>FOSTER WHEELER – Projets pharmaceutiques</h5>
+                        <ul>
+                          <li>Etudes et suivi sur site de la réalisation de lots courants faibles et instrumentation d’une usine pharmaceutique pour les laboratoires MERCK SHARP & DOHME CHIBRET à Riom (Puy-de-Dôme)</li>
+                          <li>Prise en charge des systèmes de sécurité incendie, de détection gaz et de contrôle d’accès</li>
+                          <li>Participation aux études et travaux de la Gestion Technique du Bâtiment et du système de Surveillance des Zones Classées</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>LURGI – Projet sidérurgiques</h5>
+                        <ul>
+                          <li>Estimations des lots électricité et instrumentation de deux projets de réduction des émissions de mercure provenant de fourneaux pour ERAMET Norway</li>
+                          <li>Elaboration budget</li>
+                          <li>Cahiers des charges</li>
+                          <li>Consultation et alignement technique</li>
+                          <li>Préconisations</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>CEGELEC Belgium - projets incinération</h5>
+                        <ul>
+                          <li>Estimations pour établir les devis de prestations au forfait concernant l’extension d’une usine d'incinération des ordures ménagères de Bruxelles</li>
+                          <li>Elaboration d’un système d'acquisition des données des réseaux d'énergies (vapeur, gaz, azote) pour COCKERILL - SAMBRE, une usine de production de polypropylène (lots électriques HT, BT et instrumentation) pour FINA Chemicals</li>
+                        </ul>
+                      </p>
+                      <p>
+                        <h5>SPIE TRINDEL centre de travaux Sud-Picardie – projets sidérurgiques</h5>
+                        <ul>
+                          <li>Etudes en électricité de modernisation des lignes de laquage chez SOLLAC (groupe USINOR)</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ERAMET -->
+                <div class="row mt-5">
+                  <div class="col-auto">
+                    <img src="about-me/img/logo-eramet.png" alt="Eramet" class="img-fluid" />
+                  </div>
+                  <div class="col">
+                    <div class="">
+                      <h3>Projeteur électricité, instrumentation et contrôle-commande</h3>
+                      <h4>ERAMET – Raffinerie hydro métallurgique</h4>
+                      <p>1989 – 1998</p>
+                      <div class="py-2">
+                        <button class="btn btn-secondary" id="bp6" onclick="masque(6)">Afficher +</button>
+                      </div>
+                    </div>
+                    <div class="" id="div6" style="display: none;">
+                      <p>
+                        <h5>Service bureau d'études - travaux neufs</h5>
+                        <ul>
+                          <li>Conception et prise en charge d’installations nouvelles et de gros travaux d’entretien dans les domaines de l’électricité, l’instrumentation et l’automatisme</li>
+                          <li>Spécifications d’instruments</li>
+                          <li>Architecture de contrôle-commande</li>
+                          <li>Liste E/S</li>
+                          <li>Analyse fonctionnelle</li>
+                          <li>Calcul et liste de câbles</li>
+                          <li>Assistance à la mise en service</li>
+                          <li>Formation des opérateurs</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SNEF -->
+                <div class="row mt-5">
+                  <div class="col-auto">
+                    <img src="about-me/img/logo-snef.jpg" alt="SNEF" class="img-fluid" />
+                  </div>
+                  <div class="col">
+                    <div class="">
+                      <h3>Dessinateur électricité</h3>
+                      <h4>SNEF – Etudes et travaux électriques</h4>
+                      <p>1988 – 1989</p>
+                      <div class="py-2">
+                        <button class="btn btn-secondary" id="bp6" onclick="masque(7)">Afficher +</button>
+                      </div>
+                    </div>
+                    <div class="" id="div7" style="display: none;">
+                      <p>
+                        <h5>Raffinage et Nucléaire</h5>
+                        <ul>
+                          <li>Participation aux études de grands projets dans les domaines du retraitement nucléaire et du raffinage pétrolier</li>
+                          <li>Plans de cheminements de câbles</li>
+                          <li>Plans d’armoires électriques</li>
+                          <li>Plans d’installations</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </section>
+
+            <!-- Education -->
+            <section class="py-5 my-2 bg-white" id="formation">
+              <div class="container">
+                <h2>Formation</h2>
+
+                <!-- CESI -->
+                <div class="row mt-5">
+                  <div class="col-auto">
+                    <img src="about-me/img/logo-cesi.png" alt="CESI" class="img-fluid" />
+                  </div>
+                  <div class="col">
+                    <div class="">
+                      <h3>Ingénieur CESI (Centre d’Etudes Supérieures Industrielles)</h3>
+                      <h4>Ingénieur généraliste option management de projets en formation continue sur 2 ans</h4>
+                      <p>1995 - 1997</p>
+                    </div>
+                  </div>  
+                </div>
+
+                <!-- CNAM -->
+                <div class="row mt-5">
+                  <div class="col-auto">
+                    <img src="about-me/img/logo-cnam.jpg" alt="CNAM" class="img-fluid" />
+                  </div>
+                  <div class="col">
+                    <div class="row">
+                      <h3>Unités d'enseignement du Conservatoire National des Arts et Métiers en cours du soir</h3>
+                      <div class="row mt-2">
+                        <div class="col-auto">
+                          <ul>
+                            <li>Mathématiques générales</li>
+                          </ul>
+                        </div>
+                        <div class="col-auto">
+                          <ul>
+                            <li>Analyse numérique</li>
+                          </ul>
+                        </div>
+                        <div class="col-auto">
+                          <ul>
+                            <li>Droit des affaires</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p>1992 - 1994</p>
+                    </div>
+                  </div>  
+                </div>
+
+                <!-- IUT -->
+                <div class="row mt-5">
+                  <div class="col-auto">
+                    <img src="about-me/img/logo-iut.jpg" alt="IUT" class="img-fluid" />
+                  </div>
+                  <div class="col">
+                    <div class="">
+                      <h3>DUT Génie Electrique et Informatique Industrielle</h3>
+                      <h4>Option électrotechnique et électronique de puissance</h4>
+                      <p>1985 - 1987</p>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+
+            </section>
+
+            <!-- Skills -->
+            <section class="py-5 my-2 bg-white" id="comp">
+              <div class="container">
+                <h2>Compétences professionnelles</h2>
+
+                <!-- Liste de compétences -->
+                <div class="row mx-4">
+                  <p>
+                    <ul>
+                      <li>Maîtrise des standards et des principales normes internationales</li>
+                      <li>Conception et analyse fonctionnelle des systèmes d’automatisme, suivi des études de détail</li>
+                      <li>Analyse et conception des systèmes de sécurités instrumentées (analyse des risques et conception des chaînes de sécurité, SIL, HAZOP)</li>
+                      <li>Elaboration des Process & Instrument Diagram (PID)</li>
+                      <li>Spécifications générales et particulières de matériel en électricité, instrumentation et automatismes</li>
+                      <li>Etudes de détail Hook up, schémas de boucles ...</li>
+                      <li>Spécification de travaux de montage (marché de travaux)</li>
+                      <li>Préparation des appels d’offres, établissement des tableaux comparatifs</li>
+                      <li>Budget, planification des tâches</li>
+                      <li>Choix des fournisseurs, inspection et réception du matériel</li>
+                      <li>Supervision du montage des instruments et des armoires sur site</li>
+                      <li>Norme IEC 61508, 511, 512, CFR 21 part11, Gamp 5, BPF</li>
+                    </ul>
+                  </p>  
+                </div>
+                <div class="row">
+                  <h3>Exercées dans divers secteurs industriels</h3>
+                  <div class="row">
+                    <p>
+                      <div class="col-auto">
+                        <ul>
+                          <li>L'énergie</li>
+                        </ul>
+                      </div>
+                      <div class="col-auto">
+                        <ul>
+                          <li>La pharmacie</li>
+                        </ul>
+                      </div>
+                      <div class="col-auto">
+                        <ul>
+                          <li>Le pétrole</li>
+                        </ul>
+                      </div>
+                      <div class="col-auto">
+                        <ul>
+                          <li>La chimie</li>
+                        </ul>
+                      </div>
+                      <div class="col-auto">
+                        <ul>
+                          <li>L'environnement</li>
+                        </ul>
+                      </div>
+                      <div class="col-auto">
+                        <ul>
+                          <li>La métallurgie</li>
+                        </ul>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Customers -->
+            <section class="py-5 my-2 bg-white" id="clients">
+              <div class="container">
+                <h2>Clients</h2>
+
+                <!-- Liste des clients -->
+                  <div class="row py-2 justify-content-around">
+                    <div class="col-auto text-center p-3">                
+                      <img class="img-fluid" src="about-me/img/logo-technipenergies.png" alt="Technip energies">
+                    </div>
+                    <div class="col-auto text-center p-3">                
+                      <img class="img-fluid" src="about-me/img/logo-arkema.jpg" alt="Arkema">
+                    </div>
+                    <div class="col-auto text-center p-3">                
+                      <img class="img-fluid" src="about-me/img/logo-adisseo.jpg" alt="Adisseo">
+                    </div>
+                    <div class="col-auto text-center p-3">                
+                      <img class="img-fluid" src="about-me/img/logo-merial.png" alt="Merial">
+                    </div>
+                    <div class="col-auto text-center p-3">                
+                      <img class="img-fluid" src="about-me/img/logo-rockwellautomation.png" alt="Rockwell Automation">
+                    </div>
+                    <div class="col-auto text-center p-3">                
+                      <img class="img-fluid" src="about-me/img/logo-sanofi.png" alt="Sanofi">
+                    </div>
+                    <div class="col-auto text-center p-3">                
+                      <img class="img-fluid" src="about-me/img/logo-amecfosterwheeler.jpg" alt="Amec Foster Wheeler">
+                    </div>
+                    <div class="col-auto text-center p-3">                
+                      <img class="img-fluid" src="about-me/img/logo-emerson.png" alt="Emerson">
+                    </div>
+                    <div class="col-auto text-center p-3">                
+                      <img class="img-fluid" src="about-me/img/logo-total.png" alt="Total">
+                    </div>
+                  </div>
+
+              </div>
+            </section>
+
+            <!-- Interests -->
+            <section class="py-5 my-2 bg-white" id="interets">
+              <div class="container">
+                <h2>Centres d'intérêt</h2>
+
+                <!-- Liste des centres d'intérêt -->
+                  <div class="row py-2 justify-content-around">
+                    <div class="col-auto text-center p-3">                
+                      <img class="figure-img img-fluid" src="about-me/img/sport.png" alt="Sport">
+                      <figcaption class="figure-caption">Natation et course à pieds</figcaption>
+                    </div>
+                    <div class="col-auto text-center p-3">                
+                      <img class="figure-img img-fluid" src="about-me/img/tourisme.png" alt="Tourisme">
+                      <figcaption class="figure-caption">Voyages et photo</figcaption>
+                    </div>
+                    <div class="col-auto text-center p-3">                
+                      <img class="figure-img img-fluid" src="about-me/img/informatique.png" alt="Informatique">
+                      <figcaption class="figure-caption">Informatique et langages VBA, HTML, CSS, Javascript, PHP, MySQL</figcaption>
+                    </div>
+                  </div>
+
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <script src="js/footer.js"></script>
+    <!-- Script js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="about-me/js/script.js"></script>
+  </body>
+</html>

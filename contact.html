@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="christophe farin" />
+    <!-- meta uniquement pour les mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- </* lien vers jQuery hébergé chez Google (à placer en 1er) */> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- </* lien vers reCAPTCHA hébergé chez Google */> -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- </* lien vers Bootstrap v5.0.2 */> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- </* lien vers css Font Awesome */> -->
+    <link rel="stylesheet" href="styles/css/all.min.css" />
+    <title>Formulaire de contact - Cable Tray Sizing</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <script src="js/header.js"></script>
+
+    <main class="bg-light">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Side Bar -->
+          <div class="col-md-auto bg-light sticky-top">
+            <div
+              class="d-flex flex-md-column flex-row flex-nowrap bg-light align-items-center sticky-top fs-3">
+              <ul
+                class="nav nav-pills nav-flush flex-md-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center mb-sm-auto">
+                <li class="nav-item">
+                  <a
+                    href="index.html"
+                    class="nav-link link-secondary py-3 px-2"
+                    title="Home page"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right">
+                    <i class="fa-solid fa-house navbar-icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md p-3 min-vh-auto">
+            <!-- contact -->
+            <section class="py-5 bg-white">
+              <div class="container">
+                <div class="row">
+                  <h2>Contactez-moi</h2>
+                  <p>
+                    Si vous avez des questions, des suggestions, n'hésitez pas à
+                    me contacter directement en utilisant ce formulaire.
+                  </p>
+                </div>
+                <!-- Bootstrap main form start -->
+                <form class="row" id="contact-form" name="contact-form" action="" method="post">
+                  <div class="col-12 col-md-6 mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Votre Prénom Nom"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="votre@email.com"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      placeholder="Votre message"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12 mb-3 g-recaptcha" data-sitekey="6Lf7gHApAAAAAEa4f49JP7gXPvx_EAJbCGDP7Fzv"></div>
+                  <div class="col-12 mb-3">
+                  <button type="submit" class="btn btn-primary" id="submit" name="submit">Envoyer</button>
+                  </div>
+                </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- taskbar pour les messages en bas d'écran -->
+    <div class="w-75 position-fixed bottom-0 start-50 translate-middle-x">
+      <div id="pageMessages"></div>
+    </div>
+    
+    <!-- Footer -->
+    <script src="js/footer.js"></script>
+    <!-- Script js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="contact/js/contact.js"></script>
+    <script type="text/javascript" src="js/bsalert.js"></script>
+  </body>
+</html>
