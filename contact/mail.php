@@ -19,7 +19,7 @@ header('Content-Type: application/json; charset=utf-8');
 //CAPTCHA
 //vérification si le champ "grecaptcharesponse" contient une valeur
 if(isset($_POST['grecaptcharesponse']) && !empty($_POST['grecaptcharesponse'])){
-    $recaptcha = new \ReCaptcha\ReCaptcha("6Lf7gHApAAAAAPnybbVHZeTBXA2MK7LX3dYkC2zK");
+    $recaptcha = new \ReCaptcha\ReCaptcha("6Lxxxxxxxxxxxxxxxxxxx");
 
     $resp = $recaptcha->setExpectedHostname('localhost')
     ->verify($_POST['grecaptcharesponse']);
@@ -47,7 +47,7 @@ if(isset($_POST['grecaptcharesponse']) && !empty($_POST['grecaptcharesponse'])){
             exit();
         }
 
-        $to = "chfarin69@gmail.com";  //recipient email address
+        $to = "your@gemail.com";  //recipient email address
         $subject = "Contact From website";  //Subject of the email
         //Message content to send in an email
         $message = 'Name: '.$name."\n".'Email: '.$email."\n".'Message: '.$message;
