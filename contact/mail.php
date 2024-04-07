@@ -47,7 +47,7 @@ if(isset($_POST['grecaptcharesponse']) && !empty($_POST['grecaptcharesponse'])){
             exit();
         }
 
-        $to = "your@gemail.com";  //recipient email address
+        $to = "your@email.com";  //recipient email address
         $subject = "Contact From website";  //Subject of the email
         //Message content to send in an email
         $message = 'Name: '.$name."\n".'Email: '.$email."\n".'Message: '.$message;
