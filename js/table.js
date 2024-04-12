@@ -171,6 +171,18 @@ $(document).ready(function () {
       { targets: [0, 2, 3, 4, 5], className: "dt-body-right" },
       { targets: [1], className: "dt-body-left" },
       { targets: "_all", className: "dt-head-center" },
+      {
+        targets: [2, 3, 4, 5],
+        width: "16%",
+      },
+      {
+        targets: 0,
+        width: "6%",
+      },
+      {
+        targets: 1,
+        width: "30%",
+      },
     ],
     dom: "Blrtip",
     lengthMenu: [
